@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Naveen | Cyber Security Portfolio</title>
+<title>Naveen | Cyber Security</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,146 +17,88 @@
 
 <body>
 
-<canvas id="matrix"></canvas>
-
 <nav>
 
-<h2>Naveen</h2>
+<h2>Cyber Portfolio</h2>
 
 <ul>
 
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#github">GitHub</a></li>
+<li><a href="#terminal">Terminal</a></li>
+<li><a href="#osint">OSINT</a></li>
+<li><a href="#globe">Cyber Globe</a></li>
+<li><a href="#threats">Threat Feed</a></li>
 
 </ul>
 
 </nav>
 
 
-<section class="hero">
+<section id="terminal">
 
-<h1 id="terminal"></h1>
+<h2>Hacker Terminal</h2>
 
-<p>Cyber Security • OSINT Research</p>
+<div id="terminal-box">
 
-</section>
+<div id="terminal-output"></div>
 
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<p>
-
-Cyber security enthusiast building OSINT tools and investigation platforms.
-
-</p>
-
-</section>
-
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="skill">
-
-<p>Python</p>
-
-<div class="bar"><div style="width:90%"></div></div>
-
-</div>
-
-<div class="skill">
-
-<p>OSINT</p>
-
-<div class="bar"><div style="width:85%"></div></div>
-
-</div>
-
-<div class="skill">
-
-<p>Kali Linux</p>
-
-<div class="bar"><div style="width:80%"></div></div>
+<input id="terminal-input" placeholder="type help">
 
 </div>
 
 </section>
 
 
-<section id="projects">
+<section id="osint">
 
-<h2>Projects</h2>
+<h2>OSINT Search Tool</h2>
 
-<div class="projects">
+<input id="osint-input" placeholder="username / email / domain">
 
-<div class="project">
+<button onclick="osintSearch()">Search</button>
 
-<h3>CyberScan</h3>
-
-<p>Advanced OSINT investigation platform.</p>
-
-</div>
-
-<div class="project">
-
-<h3>Username Finder</h3>
-
-<p>Search usernames across social media.</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="github">
-
-<h2>GitHub Projects</h2>
-
-<div id="repos"></div>
+<div id="osint-results"></div>
 
 </section>
 
 
 <section>
 
-<h2>Cyber Attack Globe</h2>
+<h2>3D Cyber Attack Globe</h2>
 
 <div id="globe"></div>
 
 </section>
 
 
-<section>
+<section id="threats">
 
-<h2>Investigation Graph</h2>
+<h2>Live Cyber Threat Feed</h2>
 
-<div id="network"></div>
+<div id="threat-feed"></div>
 
 </section>
 
 
-<div id="chatbot">
+<section>
 
-<div id="chat-header">AI Assistant</div>
+<h2>AI Assistant</h2>
 
-<div id="chat-messages"></div>
+<div id="ai-box">
 
-<input id="chat-input" placeholder="Ask something">
+<div id="ai-messages"></div>
+
+<input id="ai-input" placeholder="Ask something">
 
 </div>
 
+</section>
 
-<script src="script.js"></script>
-<script src="chatbot.js"></script>
+
+<script src="terminal.js"></script>
+<script src="osint.js"></script>
 <script src="globe.js"></script>
-<script src="graph.js"></script>
+<script src="ai.js"></script>
+<script src="threat.js"></script>
 
 </body>
 
