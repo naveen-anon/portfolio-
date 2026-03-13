@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Naveen | Cyber Security Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/globe.gl"></script>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
 </head>
 
@@ -26,7 +29,6 @@
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#github">GitHub</a></li>
-<li><a href="#contact">Contact</a></li>
 
 </ul>
 
@@ -37,7 +39,7 @@
 
 <h1 id="terminal"></h1>
 
-<p>Cyber Security • OSINT Research • Ethical Hacking</p>
+<p>Cyber Security • OSINT Research</p>
 
 </section>
 
@@ -48,8 +50,7 @@
 
 <p>
 
-Hello, I'm Naveen. I build OSINT tools, cyber investigation platforms  
-and explore cyber intelligence using Python and Linux.
+Cyber security enthusiast building OSINT tools and investigation platforms.
 
 </p>
 
@@ -68,7 +69,6 @@ and explore cyber intelligence using Python and Linux.
 
 </div>
 
-
 <div class="skill">
 
 <p>OSINT</p>
@@ -76,7 +76,6 @@ and explore cyber intelligence using Python and Linux.
 <div class="bar"><div style="width:85%"></div></div>
 
 </div>
-
 
 <div class="skill">
 
@@ -86,21 +85,12 @@ and explore cyber intelligence using Python and Linux.
 
 </div>
 
-
-<div class="skill">
-
-<p>Network Security</p>
-
-<div class="bar"><div style="width:75%"></div></div>
-
-</div>
-
 </section>
 
 
 <section id="projects">
 
-<h2>OSINT Projects</h2>
+<h2>Projects</h2>
 
 <div class="projects">
 
@@ -112,21 +102,11 @@ and explore cyber intelligence using Python and Linux.
 
 </div>
 
-
 <div class="project">
 
 <h3>Username Finder</h3>
 
-<p>Search usernames across social media platforms.</p>
-
-</div>
-
-
-<div class="project">
-
-<h3>OSINT Dashboard</h3>
-
-<p>Web-based intelligence gathering tool.</p>
+<p>Search usernames across social media.</p>
 
 </div>
 
@@ -144,23 +124,39 @@ and explore cyber intelligence using Python and Linux.
 </section>
 
 
-<section id="contact">
+<section>
 
-<h2>Contact</h2>
+<h2>Cyber Attack Globe</h2>
 
-<p>Email: naveen@example.com</p>
+<div id="globe"></div>
 
 </section>
 
 
-<footer>
+<section>
 
-<p>© 2026 Naveen</p>
+<h2>Investigation Graph</h2>
 
-</footer>
+<div id="network"></div>
+
+</section>
+
+
+<div id="chatbot">
+
+<div id="chat-header">AI Assistant</div>
+
+<div id="chat-messages"></div>
+
+<input id="chat-input" placeholder="Ask something">
+
+</div>
 
 
 <script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script src="globe.js"></script>
+<script src="graph.js"></script>
 
 </body>
 
