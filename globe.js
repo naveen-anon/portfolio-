@@ -8,7 +8,7 @@ const world = Globe()
 
 {lat:28.6,lng:77.2},
 {lat:40.7,lng:-74.0},
-{lat:35.6,lng:139.6}
+{lat:55.7,lng:37.6}
 
 ])
 
